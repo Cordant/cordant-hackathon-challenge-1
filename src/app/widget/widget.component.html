@@ -1,0 +1,27 @@
+<form [formGroup]="widgetForm">
+  <mat-card class="widget-wrapper">
+    <mat-card-title>
+      Report a Issue
+    </mat-card-title>
+    <mat-card-content class="mat-card-content-wrapper">
+      <div class="form-wrapper">
+        <mat-form-field class="urgency-input">
+          <mat-select placeholder="Issue Urgency" formControlName="urgency">
+            <mat-option *ngFor="let urgency of urgencies" [value]="urgency.value">
+              {{urgency.type | titlecase}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Title" formControlName="title">
+        </mat-form-field>
+
+        <mat-form-field>
+          <textarea matInput placeholder="Description" rows="8" w formControlName="description"></textarea>
+        </mat-form-field>
+      </div>
+      <button mat-button color="primary" (click)="submitReport()">Submit</button>
+    </mat-card-content>
+  </mat-card>
+</form>

@@ -1,0 +1,31 @@
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width:300px;
+}
+
+.widget-wrapper{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mat-form-field{
+  width:300px;
+  padding: 10px 0;
+}
+.urgency-input{
+  width:150px;
+}
+
+.mat-card-content-wrapper{
+  width:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
