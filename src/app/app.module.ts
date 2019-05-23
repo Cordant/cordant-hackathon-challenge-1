@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {WidgetModule} from './widget/widget.module';
+import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {WidgetModule} from './widget/widget.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    WidgetModule
+    WidgetModule,
+    SweetAlert2Module.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
