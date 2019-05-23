@@ -129,6 +129,14 @@ export class WidgetComponent implements OnInit {
       console.log(returnedData);
       if(returnedData.status === 200){
         swal.close();
+        swal.fire({
+          type: 'success',
+          toast: true,
+          title: 'Issue Submitted!',
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000
+        });
       }
     }).catch(err => console.log(err));
   }
